@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Example If/Unless </title>
+</head>
+<body>
+<div>
+    <h1>for 循环</h1>
+    <table>
+        <!--iterStat的值： 	{index = 3, count = 4, size = 4, current = User(name=纯洁的微笑, age=0, pass=null)}-->
+        <tr th:each="user,iterStat : ${users}">
+            <td th:text="${user.name}">neo</td>
+            <td th:text="${user.age}">6</td>
+            <td th:text="${user.pass}">213</td>
+            <td th:text="${iterStat.index}">index</td>
+            <td th:text="${iterStat}">index</td>
+
+        </tr>
+    </table>
+</div>
+</body>
+</html>
