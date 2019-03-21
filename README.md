@@ -7,4 +7,4 @@
 3. [spring-boot-thymeleaf-layout](https://gitee.com/xuyb/springboot_stu/tree/master/spring-boot-thymeleaf-layout)
 4. [spring-boot-jpa](https://gitee.com/xuyb/springboot_stu/tree/master/spring-boot-jpa)
 5. [spring-boot-multi-jpa](https://gitee.com/xuyb/springboot_stu/tree/master/spring-boot-multi-jpa)
-6. [https://gitee.com/xuyb/springboot_stu/tree/master/sping-boot-mybatis](https://gitee.com/xuyb/springboot_stu/tree/master/sping-boot-mybatis)
+6. [spring-boot-mybatis](https://gitee.com/xuyb/springboot_stu/tree/master/spring-boot-mybatis)
