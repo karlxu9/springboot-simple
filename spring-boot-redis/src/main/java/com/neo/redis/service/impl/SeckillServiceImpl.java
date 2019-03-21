@@ -60,6 +60,12 @@ public class SeckillServiceImpl implements SeckillService {
         return this.queryMap(productId);
     }
 
+    /**
+     * 存在并发问题，推荐使用分布式锁解决
+     * synchronized效率太低
+     *
+     * @param productId 商品id
+     */
     @Override
     public void orderProductMockDiffUser(String productId) {
         Long time = System.currentTimeMillis() + TIMEOUT;
