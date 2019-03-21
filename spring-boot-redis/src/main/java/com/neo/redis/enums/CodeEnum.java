@@ -2,7 +2,7 @@ package com.neo.redis.enums;
 
 /**
  * 接口: <br>
- * ()
+ * (枚举顶层接口)
  *
  * @Author: Mr. xyb
  * @Date: 2019/3/21 10:46

@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 /**
  * 模块描述: <br>
- * ()
+ * (用户实体)
  *
  * @Author: Mr. xyb
  * @Date: 2019/3/15 12:59

@@ -4,7 +4,7 @@ import java.util.Random;
 
 /**
  * 模块描述: <br>
- * ()
+ * (随机数生成)
  *
  * @Author: Mr. xyb
  * @Date: 2019/3/21 10:30

@@ -2,7 +2,7 @@ package com.neo.redis.service;
 
 /**
  * 接口: <br>
- * ()
+ * (秒杀操作)
  *
  * @Author: Mr. xyb
  * @Date: 2019/3/21 9:36

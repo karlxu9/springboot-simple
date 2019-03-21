@@ -40,6 +40,12 @@ public class SeckillServiceImpl implements SeckillService {
         stocks.put("12345", 10000);
     }
 
+    /**
+     * 打印结果
+     *
+     * @param productId
+     * @return
+     */
     private String queryMap(String productId) {
         return "国庆活动，皮蛋粥特价，限量份"
                 + products.get(productId)

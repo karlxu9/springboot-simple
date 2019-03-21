@@ -5,7 +5,7 @@ import lombok.Getter;
 
 /**
  * 模块描述: <br>
- * ()
+ * (全局异常)
  *
  * @Author: Mr. xyb
  * @Date: 2019/3/21 10:34

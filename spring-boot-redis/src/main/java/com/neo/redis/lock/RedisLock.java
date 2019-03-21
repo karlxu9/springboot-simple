@@ -8,7 +8,7 @@ import org.springframework.util.StringUtils;
 
 /**
  * 模块描述: <br>
- * ()
+ * (redis分布锁核心代码，加锁，解锁)
  *
  * @Author: Mr. xyb
  * @Date: 2019/3/21 9:40
@@ -72,8 +72,11 @@ public class RedisLock {
      */
     public void unlock(String key, String value) {
         try {
+            // 查找当前key
             String currentValue = redisTemplate.opsForValue().get(key);
+            // 如果在值不为空同时与传递过来的值相同，则代表是当前线程执行完的操作
             if (!StringUtils.isEmpty(currentValue) && currentValue.equals(value)) {
+                // 删除key值
                 redisTemplate.opsForValue().getOperations().delete(key);
             }
         } catch (Exception e) {
