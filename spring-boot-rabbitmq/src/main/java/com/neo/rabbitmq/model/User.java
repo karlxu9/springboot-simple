@@ -20,6 +20,10 @@ public class User implements Serializable {
 
     private String pass;
 
+    public User() {
+
+    }
+
     @Override
     public String toString() {
         return "User{" +
