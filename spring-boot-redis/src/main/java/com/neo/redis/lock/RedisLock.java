@@ -52,6 +52,8 @@ public class RedisLock {
              * 判断是否为空，且是否与当前的currentValue相同
              * 判定是否为当前线程，此方案是为了防止并发问题出现，导致数据错乱
              * 后面的线程拿到的currentValue值正常来说不会与oldValue相等，这样也就不会出现并发导致数据错误的问题
+             * TODO 这里存在一个问题，如果超时，多个线程进入当前代码块，就算其他线程没有拿到锁，
+             *  但是他们的value依旧设置进了redis中，然后拿到锁的线程是解不了锁的
              */
             String oldValue = redisTemplate.opsForValue().getAndSet(key, value);
             if (!StringUtils.isEmpty(oldValue) && oldValue.equals(currentValue)) {

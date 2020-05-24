@@ -74,7 +74,8 @@ public class SeckillServiceImpl implements SeckillService {
         }
         // 查询当前key的库存
         int stockNum = stocks.get(productId);
-        if (stockNum == 0) {// 库存不足
+        // 库存不足
+        if (stockNum == 0) {
             throw new GlobException(ExceptionEnum.PRODUCT_STOCK_DEFICIENCY);
         }
         // 下单

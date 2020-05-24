@@ -48,7 +48,7 @@ public class SeckillController {
      */
     @GetMapping("/order/{productId}")
     public String skill(@PathVariable String productId) {
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 1000; i++) {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
