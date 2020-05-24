@@ -19,7 +19,7 @@ import java.util.UUID;
 public class TokenController {
 
     @RequestMapping("/token")
-    String token(HttpSession httpSession) {
+    public String token(HttpSession httpSession) {
         UUID token = (UUID) httpSession.getAttribute("token");
         if (token == null) {
             token = UUID.randomUUID();
@@ -27,6 +27,4 @@ public class TokenController {
         httpSession.setAttribute("token", token);
         return httpSession.getId();
     }
-
-
 }

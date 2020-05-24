@@ -20,7 +20,7 @@ public class TopicSender {
     private AmqpTemplate amqpTemplate;
 
     public void sender1() {
-        amqpTemplate.convertAndSend("topicExchange", "topic.message", "topic.message");
+        amqpTemplate.convertAndSend("topicExchange", "topic.message"    , "topic.message");
     }
 
     public void sender2() {
