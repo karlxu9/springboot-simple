@@ -34,3 +34,15 @@
 10. [spring-boot-rabbitmq](https://gitee.com/xuyb/springboot_stu/tree/master/spring-boot-rabbitmq)
 
 	spring boot集成rabbitmq消息队列，目前在项目已经存在普通的生产者消费者的一对多和多对多的消息传递。同时还在项目中加了Topic交换机通配符模式，以及Fanout消息广播模式
+	
+11. [spring-boot-scheduler](https://gitee.com/xuyb/springboot_stu/tree/master/spring-boot-scheduler)
+    
+    spring boot使用spring集成的Scheduled注解，实现定时任务功能
+
+12. [spring-boot-mail](https://gitee.com/xuyb/springboot_stu/tree/master/spring-boot-mail)
+
+    spring boot集成邮件功能，demo中提供多种发送邮件的模板，根据自己需要使用
+
+13. [spring-boot-atlas](https://gitee.com/xuyb/springboot_stu/tree/master/spring-boot-atlas)
+
+    spring boot集成Atlas以及sharding-jdbc，demo中分别以这两种开源组件实现了读写分离功能，根据自己的需要使用
