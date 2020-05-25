@@ -26,7 +26,6 @@ import java.util.List;
  * @since: 1.8.0
  * @version: 1.0.0
  */
-@Mapper
 public interface ShopMapper {
 
     @Select("select * from shop")

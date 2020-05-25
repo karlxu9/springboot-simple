@@ -16,8 +16,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <latest.release.version>2.0.3</latest.release.version>
-        <sharding.jdbc.version>3.1.0</sharding.jdbc.version>
+        <sharding.jdbc.version>4.0.1</sharding.jdbc.version>
     </properties>
 
     <dependencies>
@@ -60,24 +59,20 @@
             </exclusions>
         </dependency>
 
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-            <version>1.1.10</version>
+        <!--<dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+            <version>2.7.0</version>
         </dependency>
 
-        <!-- for spring boot -->
+
+        &lt;!&ndash; for spring boot &ndash;&gt;
         <dependency>
-            <groupId>io.shardingsphere</groupId>
+            <groupId>org.apache.shardingsphere</groupId>
             <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
             <version>${sharding.jdbc.version}</version>
-        </dependency>
+        </dependency>-->
 
-        <dependency>
-            <groupId>io.shardingsphere</groupId>
-            <artifactId>sharding-jdbc-spring-namespace</artifactId>
-            <version>${sharding.jdbc.version}</version>
-        </dependency>
     </dependencies>
 
     <build>

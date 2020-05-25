@@ -45,12 +45,4 @@ public class ShopController {
         shopService.save(name);
         return "success";
     }
-
-
-    @GetMapping("test")
-    public Object test() throws SQLException {
-
-        shopService.test();
-        return null;
-    }
 }

@@ -20,5 +20,4 @@ public interface ShopService {
 
     void save(String name);
 
-    void test();
 }
