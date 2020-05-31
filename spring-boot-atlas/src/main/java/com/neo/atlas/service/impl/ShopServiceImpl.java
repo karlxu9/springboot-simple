@@ -12,6 +12,7 @@ package com.neo.atlas.service.impl;
 import com.neo.atlas.dao.ShopMapper;
 import com.neo.atlas.entity.Shop;
 import com.neo.atlas.service.ShopService;
+import org.apache.shardingsphere.api.hint.HintManager;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -26,7 +27,9 @@ public class ShopServiceImpl implements ShopService {
 
     @Override
     public List<Shop> list() {
-
+        // 强制主库读
+        //HintManager manager = HintManager.getInstance();
+        //manager.setMasterRouteOnly();
         return shopMapper.list();
     }
 

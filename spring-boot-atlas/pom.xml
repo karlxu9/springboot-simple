@@ -59,19 +59,19 @@
             </exclusions>
         </dependency>
 
-        <!--<dependency>
+        <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-dbcp2</artifactId>
             <version>2.7.0</version>
         </dependency>
 
 
-        &lt;!&ndash; for spring boot &ndash;&gt;
+        <!-- for spring boot -->
         <dependency>
             <groupId>org.apache.shardingsphere</groupId>
             <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
             <version>${sharding.jdbc.version}</version>
-        </dependency>-->
+        </dependency>
 
     </dependencies>
 

@@ -28,6 +28,7 @@ import java.util.List;
  */
 public interface ShopMapper {
 
+    // /*master*/ 业务需要 atlas
     @Select("select * from shop")
     List<Shop> list();
 
